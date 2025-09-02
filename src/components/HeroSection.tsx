@@ -159,8 +159,8 @@ export const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
                   <span className="text-white font-bold">AO</span>
                 </div>
                 <div>
-                  <p className="font-bold">Adebayo Ogundimu</p>
-                  <p className="text-muted-foreground">CEO, Lagos MFB</p>
+                  <p className="font-bold">Frank Ezuruike</p>
+                  <p className="text-muted-foreground">CEO, Abuja MFB</p>
                 </div>
               </div>
             </div>
