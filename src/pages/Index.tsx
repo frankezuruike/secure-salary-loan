@@ -1,12 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import { Navigation } from "@/components/Navigation";
+import { HeroSection } from "@/components/HeroSection";
+import { CustomerDashboard } from "@/components/CustomerDashboard";
+import { OfficerDashboard } from "@/components/OfficerDashboard";
 
 const Index = () => {
+  const [userType, setUserType] = useState<'customer' | 'officer' | null>(null);
+
+  const handleGetStarted = () => {
+    // For demo purposes, show customer login
+    setUserType('customer');
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Navigation userType={userType} onUserTypeChange={setUserType} />
+      
+      {userType === 'customer' && <CustomerDashboard />}
+      {userType === 'officer' && <OfficerDashboard />}
+      {!userType && <HeroSection onGetStarted={handleGetStarted} />}
     </div>
   );
 };
