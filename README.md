@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Welcome to your BeraCode project
 
 ## Project info
 
@@ -62,9 +62,9 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/4b710716-cfe3-482e-9cb0-fba282ea2767) and click on Share -> Publish.
+Simply open [BeraCode](https://lovable.dev/projects/4b710716-cfe3-482e-9cb0-fba282ea2767) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
+## Can I connect a custom domain to my BeraCode project?
 
 Yes, you can!
 
